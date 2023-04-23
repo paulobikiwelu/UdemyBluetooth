@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UdemyBluetooth.Interfaces
+{
+    public interface IFileTransfer
+    {
+        byte[][] Split(byte[] data, int packetSize);
+        byte[] Combine(byte[][] data);
+    }
+}
